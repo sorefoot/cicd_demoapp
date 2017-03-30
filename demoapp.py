@@ -8,14 +8,14 @@ api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
-        text = "Hello World!"
+        text = "Hello Sad World!"
         return text
 
 api.add_resource(HelloWorld, '/hello/world')
 
 class HelloUniverse(Resource):
     def get(self):
-        text = "Hello Universe!"
+        text = "Hello Cruel Universe!"
         return text
 
 api.add_resource(HelloUniverse, '/hello/universe')
